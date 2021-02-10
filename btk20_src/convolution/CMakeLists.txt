@@ -27,4 +27,4 @@ install(TARGETS btk20_convolution
 install(TARGETS ${SWIG_MODULE_convolution_REAL_NAME}
                 ARCHIVE DESTINATION ${PYTHON_SITE_PACKAGES}
                 LIBRARY DESTINATION ${PYTHON_SITE_PACKAGES})
-install(FILES ${CMAKE_BINARY_DIR}/convolution/convolution.py DESTINATION ${PYTHON_SITE_PACKAGES})
+install(FILES ${PROJECT_BINARY_DIR}/convolution/convolution.py DESTINATION ${PYTHON_SITE_PACKAGES})

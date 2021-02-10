@@ -27,4 +27,4 @@ install(TARGETS btk20_square_root
 install(TARGETS ${SWIG_MODULE_square_root_REAL_NAME}
                 ARCHIVE DESTINATION ${PYTHON_SITE_PACKAGES}
                 LIBRARY DESTINATION ${PYTHON_SITE_PACKAGES})
-install(FILES ${CMAKE_BINARY_DIR}/square_root/square_root.py DESTINATION ${PYTHON_SITE_PACKAGES})
+install(FILES ${PROJECT_BINARY_DIR}/square_root/square_root.py DESTINATION ${PYTHON_SITE_PACKAGES})

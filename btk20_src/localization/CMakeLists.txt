@@ -27,4 +27,4 @@ install(TARGETS btk20_localization
 install(TARGETS ${SWIG_MODULE_localization_REAL_NAME}
                 ARCHIVE DESTINATION ${PYTHON_SITE_PACKAGES}
                 LIBRARY DESTINATION ${PYTHON_SITE_PACKAGES})
-install(FILES ${CMAKE_BINARY_DIR}/localization/localization.py DESTINATION ${PYTHON_SITE_PACKAGES})
+install(FILES ${PROJECT_BINARY_DIR}/localization/localization.py DESTINATION ${PYTHON_SITE_PACKAGES})

@@ -29,4 +29,4 @@ install(TARGETS btk20_beamformer
 install(TARGETS ${SWIG_MODULE_beamformer_REAL_NAME}
                 ARCHIVE DESTINATION ${PYTHON_SITE_PACKAGES}
                 LIBRARY DESTINATION ${PYTHON_SITE_PACKAGES})
-install(FILES ${CMAKE_BINARY_DIR}/beamformer/beamformer.py DESTINATION ${PYTHON_SITE_PACKAGES})
+install(FILES ${PROJECT_BINARY_DIR}/beamformer/beamformer.py DESTINATION ${PYTHON_SITE_PACKAGES})

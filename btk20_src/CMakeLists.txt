@@ -30,7 +30,7 @@ add_definitions(-DENABLE_LEGACY_BTK_API)
 # For swig
 find_package(SWIG 3.0 REQUIRED)
 include(${SWIG_USE_FILE})
-set(CMAKE_SWIG_FLAGS "-I${CMAKE_SOURCE_DIR}" "-I${CMAKE_SOURCE_DIR}/include")
+set(CMAKE_SWIG_FLAGS "-I${PROJECT_SOURCE_DIR}" "-I${PROJECT_SOURCE_DIR}/include")
 
 # For python binding
 find_package(PythonLibs ${TARGET_PYTHON_VERSION} REQUIRED)
@@ -71,7 +71,7 @@ endif(NOT CUDA_VERSION)
 #find_package(Torch)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
-include_directories(${CMAKE_SOURCE_DIR})
+include_directories(${PROJECT_SOURCE_DIR})
 
 #### BTK20 library
 

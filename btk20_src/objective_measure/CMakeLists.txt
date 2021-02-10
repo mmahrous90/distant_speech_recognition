@@ -27,4 +27,4 @@ install(TARGETS btk20_objective_measure
 install(TARGETS ${SWIG_MODULE_objective_measure_REAL_NAME}
                 ARCHIVE DESTINATION ${PYTHON_SITE_PACKAGES}
                 LIBRARY DESTINATION ${PYTHON_SITE_PACKAGES})
-install(FILES ${CMAKE_BINARY_DIR}/objective_measure/objective_measure.py DESTINATION ${PYTHON_SITE_PACKAGES})
+install(FILES ${PROJECT_BINARY_DIR}/objective_measure/objective_measure.py DESTINATION ${PYTHON_SITE_PACKAGES})

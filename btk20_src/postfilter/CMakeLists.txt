@@ -1,7 +1,7 @@
 include_directories(${GSL_INCLUDE_DIRS})
 include_directories(${NUMPY_INCLUDES})
 add_library(btk20_postfilter postfilter.cc binauralprocessing.cc
-postfilter.cc spectralsubtraction.cc ${CMAKE_SOURCE_DIR}/beamformer/beamformer.cc)
+postfilter.cc spectralsubtraction.cc ${PROJECT_SOURCE_DIR}/beamformer/beamformer.cc)
 target_link_libraries(btk20_postfilter
         GSL::gsl GSL::gslcblas
         btk20_stream btk20_matrix btk20_modulated)
@@ -30,4 +30,4 @@ install(TARGETS btk20_postfilter
 install(TARGETS ${SWIG_MODULE_postfilter_REAL_NAME}
                 ARCHIVE DESTINATION ${PYTHON_SITE_PACKAGES}
                 LIBRARY DESTINATION ${PYTHON_SITE_PACKAGES})
-install(FILES ${CMAKE_BINARY_DIR}/postfilter/postfilter.py DESTINATION ${PYTHON_SITE_PACKAGES})
+install(FILES ${PROJECT_BINARY_DIR}/postfilter/postfilter.py DESTINATION ${PYTHON_SITE_PACKAGES})
